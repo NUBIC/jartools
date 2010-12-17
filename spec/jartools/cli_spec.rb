@@ -4,7 +4,7 @@ describe JarTools::CLI do
   describe "#packages" do
     before do
       @result = capture_stdout do
-        JarTools::CLI.new.packages(sample_jar("slf4j-api-1.6.0.jar"))
+        JarTools::CLI.start(["packages", sample_jar("slf4j-api-1.6.0.jar")])
       end.split(/\n/)
     end
 
