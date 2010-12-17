@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'jartools'
+
+begin
+  JarTools::CLI.start
+rescue Interrupt => e
+  $stderr.puts "Interrupted"
+  exit 1
+end
