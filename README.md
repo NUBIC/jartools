@@ -41,6 +41,10 @@ Tools included
 
 Lists all the packages present in a JAR.
 
+### manifest
+
+Prints the JAR's manifest (if any) to standard out.
+
 Project links
 -------------
 
