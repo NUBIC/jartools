@@ -47,5 +47,10 @@ module JarTools
         }.join("\n")
       end
     end
+
+    desc "diff JARFILE1 JARFILE2", "Recursively find differences in two JARs or WARs"
+    def diff(jar1, jar2)
+      Diff.diff(jar1, jar2)
+    end
   end
 end

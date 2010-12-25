@@ -60,4 +60,11 @@ describe JarTools::CLI do
       end
     end
   end
+
+  describe "#diff" do
+    it "prints nothing for the same jar" do
+      cli_lines("diff", sample_jar("slf4j-api-1.6.0.jar"), sample_jar("slf4j-api-1.6.0.jar")).
+        should == []
+    end
+  end
 end
