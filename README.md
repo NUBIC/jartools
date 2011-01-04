@@ -45,6 +45,11 @@ Lists all the packages present in a JAR.
 
 Prints the JAR's manifest (if any) to standard out.
 
+### diff
+
+Does a diff of two JARs or WARs, including file content diffs and
+recursive diffs of contained JARs.
+
 Project links
 -------------
 
