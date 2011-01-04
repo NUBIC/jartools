@@ -18,7 +18,7 @@ Installing `jartools`
 Depending on how your ruby is installed, you may need root privileges
 to do this.
 
-It's been tested on Ruby 1.8.7 only.
+It's been tested on Ruby 1.8.7, JRuby 1.5.6, and Ruby 1.9.2.
 
 Using `jartools`
 ----------------

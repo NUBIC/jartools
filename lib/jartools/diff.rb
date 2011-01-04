@@ -2,7 +2,7 @@ require 'jartools'
 
 require 'diff/lcs'
 require 'diff/lcs/hunk'
-require 'sha1'
+require 'digest/sha1'
 
 require 'tempfile'
 require 'zip/zip'
@@ -145,11 +145,15 @@ module JarTools
 
     class UniformFile
       def contents
-        @contents ||= File.read(readable_filename)
+        @contents ||= if RUBY_VERSION =~ /1.8/
+                        File.read(readable_filename)
+                      else
+                        File.read(readable_filename, :encoding => 'binary')
+                      end
       end
 
       def sha1
-        @sha1 ||= SHA1.sha1(contents).hexdigest
+        @sha1 ||= Digest::SHA1.hexdigest(contents)
       end
     end
 
