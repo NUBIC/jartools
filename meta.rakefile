@@ -1,9 +1,4 @@
-require 'rake'
-
-# This rakefile depends on the main one and uses RVM to implement
-# tasks that require multiple platforms at once.
-
-LADLE_PLATFORMS = {
+PLATFORMS = {
   :ruby18 => 'ree-1.8.7-2010.02',
   :jruby  => 'jruby-1.5.6',
   :ruby19 => 'ruby-1.9.2-p0'
@@ -17,7 +12,7 @@ end
 
 namespace :ci do
   task :rvmrc do
-    puts "#{LADLE_PLATFORMS[ci_env]}@jartools"
+    puts "#{PLATFORMS[ci_env]}@jartools"
   end
 
   task :ensure_bundler_available do
