@@ -4,7 +4,7 @@ PLATFORMS = {
   :ruby19 => 'ruby-1.9.2-p0'
 }
 
-BUNDLER_VERSION = '1.0.7'
+BUNDLER_VERSION = '1.0.10'
 
 def ci_env
   (ENV["JARTOOLS_ENV"] || :ruby18).to_sym
@@ -26,3 +26,5 @@ namespace :ci do
     system "bundle _#{BUNDLER_VERSION}_ install"
   end
 end
+
+task :default => 'ci:setup'
