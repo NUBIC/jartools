@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency "thor", "~> 0.14.0"
   s.add_runtime_dependency "rubyzip", "0.9.4"
+  s.add_runtime_dependency "diff-lcs", "~> 1.1.2"
   s.add_development_dependency "rspec", "~> 2.3"
   s.add_development_dependency "ci_reporter", "~> 1.6"
 end
