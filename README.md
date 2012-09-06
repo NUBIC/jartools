@@ -53,8 +53,8 @@ recursive diffs of contained JARs.
 Project links
 -------------
 
-* [Continuous integration](https://ctms-ci.nubic.northwestern.edu/hudson/job/jartools/)
-* [Issue tracking](http://github.com/rsutphin/jartools/issues)
+* [Continuous integration](https://public-ci.nubic.northwestern.edu/job/jartools/)
+* [Issue tracking](http://github.com/NUBIC/jartools/issues)
 
 Non-issue questions can be sent to rhett@detailedbalance.net.
 
